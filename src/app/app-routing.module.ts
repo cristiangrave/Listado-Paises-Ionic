@@ -14,9 +14,12 @@ const routes: Routes = [
       import('./folder/folder.module').then((m) => m.FolderPageModule),
   },
   {
-    path: 'paises',
+    /* esteListCountryy es el donde de enlazan ami pagina principal por medio del este archivo routing */
+    path: 'list-country',
     loadChildren: () =>
-      import('./listado/listado.module').then((m) => m.ListadoModule),
+      import('./list-country/list-country.module').then(
+        (m) => m.ListCountryPageModule
+      ),
   },
 ];
 
