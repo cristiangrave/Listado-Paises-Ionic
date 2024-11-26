@@ -6,8 +6,10 @@
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">listCountry</ion-title>
-    </ion-toolbar>
+    <ion-title size="medium">Home </ion-title>
   </ion-header>
+  <ion-tab-button tab="globe" [routerLink]="['/list']">
+    <ion-icon name="globe" aria-hidden="true"></ion-icon>
+    <ion-label>Ver Listado</ion-label>
+  </ion-tab-button>
 </ion-content>

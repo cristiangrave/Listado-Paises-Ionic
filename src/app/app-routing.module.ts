@@ -20,7 +20,11 @@ const routes: Routes = [
       import('./list-country/list-country.module').then(
         (m) => m.ListCountryPageModule
       ),
+  },  {
+    path: 'list',
+    loadChildren: () => import('./list/list.module').then( m => m.ListPageModule)
   },
+
 ];
 
 @NgModule({

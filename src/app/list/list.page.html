@@ -1,0 +1,20 @@
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar style="position: sticky; top: 0">
+      <ion-title size="large">Listado de Paises</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-content>
+      <ion-list>
+        <ion-item *ngFor="let pais of data">
+          <ion-thumbnail slot="end">
+            <img alt="{{pais.flags.alt}}" src="{{pais.flags.svg}}" />
+          </ion-thumbnail>
+          <ion-label style="text-align: center">{{pais.name.common}}</ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
