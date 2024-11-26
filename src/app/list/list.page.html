@@ -8,6 +8,8 @@
   <ion-card>
     <ion-card-content>
       <ion-list>
+        <!-- con este *ngfor vamor poder recorrer nuestra variable data y data tiene los objetos que vamos a utilizar en
+         cada lado de nuestro  item -->
         <ion-item *ngFor="let pais of data">
           <ion-thumbnail slot="end">
             <img alt="{{pais.flags.alt}}" src="{{pais.flags.svg}}" />
